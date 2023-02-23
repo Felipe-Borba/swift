@@ -29,6 +29,9 @@ struct ContentView: View {
         UnitOfMeasurement(label: "Celsius (C)", type: .temperature, group: .celsius),
         UnitOfMeasurement(label: "Fahrenheit (F)", type: .temperature, group: .fahrenheit),
     ]
+    //TODO: use Measurement for calculate measurements
+    //TODO: add more options
+    //TODO: maybe its better add a new selector to choose betwen length and temperature...
     
     var inputConverted:Double {
         if inputUnit.group == .meter && outputUnit.group == .kilometers {
