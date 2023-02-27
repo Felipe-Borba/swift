@@ -10,6 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var scorePoint = 0
+    
+    @State private var showingGameOver = false
+    
+    @State private var round = 0
+    private let MAX_ROUND = 8
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
@@ -58,7 +64,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
 
-                Text("Score: ???")
+                Text("Score: \(scorePoint)")
                     .foregroundColor(.white)
                     .font(.title.bold())
 
@@ -69,23 +75,48 @@ struct ContentView: View {
         .alert(scoreTitle, isPresented: $showingScore) {
             Button("Continue", action: askQuestion)
         } message: {
-            Text("Your score is ???")
+            Text("Your score is \(scorePoint)")
+        }
+        .alert("Game Over", isPresented: $showingGameOver) {
+            Button("Play again", action: reset)
+        } message: {
+            if(scorePoint == MAX_ROUND) {
+                Text("You gessed all flags correctly!")
+            } else {
+                Text("You gessed \(scorePoint) of \(MAX_ROUND) flags correctly!")
+            }
         }
     }
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            scorePoint += 1
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "Wrong! That’s the flag of \(countries[number])"
         }
 
-        showingScore = true
+        round += 1
+        if round < MAX_ROUND {
+            showingScore = true
+        } else {
+            showingGameOver = true
+        }
+    }
+    
+    func reset() {
+        round = 0
+        scorePoint = 0
+        askQuestion()
     }
     
     func askQuestion() {
         countries.shuffle()
+        let oldAnswer = correctAnswer
         correctAnswer = Int.random(in: 0...2)
+        if correctAnswer == oldAnswer {
+            askQuestion()
+        }
     }
 }
 
