@@ -67,8 +67,9 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalAmount, format: currencyFormatter)
+                        .foregroundColor(tipPercentage != 0 ? Color.black : Color.red)
                 } header: {
-                    Text("Total amount dor the check")
+                    Text("Total amount")
                 }
             }
             .navigationTitle("WeSplit")
