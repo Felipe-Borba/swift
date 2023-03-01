@@ -15,6 +15,11 @@ struct ContentView: View {
     @State private var showingGameOver = false
     
     private let moves = ["rock", "paper", "scissors"]
+    let p1p2move = [
+        "rock": ["rock": false, "paper": true, "scissors": false],
+        "paper": ["rock": false, "paper": false, "scissors": true],
+        "scissors": ["rock": true, "paper": false, "scissors": false]
+    ]
     
     struct SpacerFixed: View {
         var body: some View {
@@ -72,11 +77,6 @@ struct ContentView: View {
         
         let playerMove = moves[move]
         let appMove = moves[currentMove]
-        let p1p2move = [
-            "rock": ["rock": false, "paper": true, "scissors": false],
-            "paper": ["rock": false, "paper": false, "scissors": true],
-            "scissors": ["rock": true, "paper": false, "scissors": false]
-        ]
         
         var didWin = p1p2move[appMove]?[playerMove] ?? false
         
