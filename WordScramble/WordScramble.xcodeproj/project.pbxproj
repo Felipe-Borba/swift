@@ -11,7 +11,7 @@
 		553B2D1329B89351004395BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B2D1229B89351004395BC /* ContentView.swift */; };
 		553B2D1529B89352004395BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553B2D1429B89352004395BC /* Assets.xcassets */; };
 		553B2D1829B89352004395BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553B2D1729B89352004395BC /* Preview Assets.xcassets */; };
-		553B2D1F29B8938B004395BC /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 553B2D1E29B8938B004395BC /* start.txt */; };
+		558C7C4E29B9E46700DC8BC4 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 558C7C4D29B9E46700DC8BC4 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		553B2D1229B89351004395BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		553B2D1429B89352004395BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553B2D1729B89352004395BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		553B2D1E29B8938B004395BC /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		558C7C4D29B9E46700DC8BC4 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +53,9 @@
 		553B2D0F29B89351004395BC /* WordScramble */ = {
 			isa = PBXGroup;
 			children = (
-				553B2D1E29B8938B004395BC /* start.txt */,
 				553B2D1029B89351004395BC /* WordScrambleApp.swift */,
 				553B2D1229B89351004395BC /* ContentView.swift */,
+				558C7C4D29B9E46700DC8BC4 /* start.txt */,
 				553B2D1429B89352004395BC /* Assets.xcassets */,
 				553B2D1629B89352004395BC /* Preview Content */,
 			);
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				553B2D1829B89352004395BC /* Preview Assets.xcassets in Resources */,
-				553B2D1F29B8938B004395BC /* start.txt in Resources */,
+				558C7C4E29B9E46700DC8BC4 /* start.txt in Resources */,
 				553B2D1529B89352004395BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
