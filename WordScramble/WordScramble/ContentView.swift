@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var totalScore = 0
     
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -28,11 +29,21 @@ struct ContentView: View {
                         HStack {
                             Image(systemName: "\(word.count).circle")
                             Text(word)
+                            Spacer()
+                            Text("Score: \(totalScore.formatted())")
                         }
                     }
                 }
             }
             .navigationTitle(rootWord)
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Restart") {
+                        restartGame()
+                    }
+                }
+            }
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
             .alert(errorTitle, isPresented: $showingError) {
@@ -48,7 +59,17 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
 
         // exit if the remaining string is empty
-        guard answer.count > 0 else { return }
+        guard answer.count != 0 else { return }
+        
+        guard answer != rootWord else {
+            wordError(title: "Invalid Word", message: "Be more original")
+            return
+        }
+        
+        guard answer.count > 3 else {
+            wordError(title: "Word to short", message: "The word should have at least 3 letters")
+            return
+        }
 
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
@@ -65,6 +86,7 @@ struct ContentView: View {
             return
         }
 
+        totalScore += calculateScore(rootWord: rootWord, userWord: answer)
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
@@ -121,6 +143,16 @@ struct ContentView: View {
         errorTitle = title
         errorMessage = message
         showingError = true
+    }
+    
+    func restartGame() {
+        usedWords = []
+        totalScore = 0
+        startGame()
+    }
+    
+    func calculateScore(rootWord:String, userWord:String) -> Int {
+        return (userWord.count - rootWord.count / rootWord.count) * 100
     }
 }
 
