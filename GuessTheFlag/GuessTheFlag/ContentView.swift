@@ -20,6 +20,10 @@ struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
+    @State private var flagsAnimation = [0.0, 0.0, 0.0]
+    @State private var buttonsFade = [false, false, false]
+    @State private var scaleEffectAmount = 1.0
+    
     struct FlagImage: View {
         let contry: String
         
@@ -58,16 +62,39 @@ struct ContentView: View {
 
                     ForEach(0..<3) { number in
                         Button {
-                            flagTapped(number)
+                            withAnimation(.interpolatingSpring(stiffness: 5, damping: 3)) {
+                                flagsAnimation[number] += 360
+                                var faded: [Bool] = []
+                                for (index, _) in buttonsFade.enumerated() {
+                                    if index == number {
+                                        faded.append(false)
+                                    } else {
+                                        faded.append(true)
+                                    }
+                                }
+                                buttonsFade = faded
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
+                                withAnimation(.easeIn) {
+                                    scaleEffectAmount = 0
+                                    flagTapped(number)
+                                }
+                                buttonsFade = [false, false, false]
+                            }
                         } label: {
                             FlagImage(contry: countries[number])
+                                .rotation3DEffect(.degrees(flagsAnimation[number]), axis: (x: 0, y: 1, z: 0))
                         }
+                        .opacity(buttonsFade[number] ? 0.25 : 1)
+                        .animation(.easeIn, value: buttonsFade[number])
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 20)
                 .background(.regularMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+                .scaleEffect(scaleEffectAmount)
 
                 Spacer()
                 Spacer()
@@ -81,7 +108,12 @@ struct ContentView: View {
             .padding()
         }
         .alert(scoreTitle, isPresented: $showingScore) {
-            Button("Continue", action: askQuestion)
+            Button("Continue") {
+                withAnimation(.easeOut) {
+                    scaleEffectAmount = 1
+                    askQuestion()
+                }
+            }
         } message: {
             Text("Your score is \(scorePoint)")
         }

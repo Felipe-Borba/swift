@@ -58,7 +58,7 @@ struct ContentView: View {
             animationAmount = 2
         }
         // */
-        /*
+        //*
         print(animationAmount)
         return VStack {
             Stepper("Scale amount", value: $animationAmount.animation(), in: 1...10)
@@ -150,6 +150,7 @@ struct ContentView: View {
             }
         }
         // */
+        /*
         ZStack {
             Rectangle()
                 .fill(.blue)
@@ -167,6 +168,7 @@ struct ContentView: View {
                 isShowingRed.toggle()
             }
         }
+        // */
     }
 }
 
