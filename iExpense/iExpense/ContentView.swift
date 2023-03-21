@@ -7,42 +7,43 @@
 
 import SwiftUI
 
-class User: ObservableObject {
-    @Published var firstName = "bilbo"
-    @Published var lastName = "baggings"
-    
-}
-struct SecondView: View {
-    let name: String
-    @Environment(\.dismiss) var dismiss
+struct ContentView: View {
+    @StateObject var expenses = Expenses()
+    @State private var showingAddExpense = false
 
     var body: some View {
-        Text("Hello, \(name)!")
-        Button("Dismiss") {
-            dismiss()
-        }
-    }
-}
-struct ContentView: View {
-    @StateObject var user = User()
-    @State private var showingSheet = false
-    
-    var body: some View {
-        VStack {
-            Text("Your name is \(user.firstName) \(user.lastName)")
-            
-            TextField("First name", text: $user.firstName)
-            TextField("First name", text: $user.lastName)
-            
-            Button("Show Sheet") {
-                showingSheet.toggle()
+        NavigationView {
+            List {
+                ForEach(expenses.items) { item in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.type)
+                        }
+
+                        Spacer()
+                        Text(item.amount, format: .currency(code: "USD"))
+                    }
+                }
+                .onDelete(perform: removeItems)
+            }
+            .navigationTitle("iExpense")
+            .toolbar {
+                Button {
+                    showingAddExpense = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $showingAddExpense) {
+                AddView(expenses: expenses)
             }
         }
-        .padding()
-        .sheet(isPresented: $showingSheet) {
-            SecondView(name: "test")
-        }
-
+    }
+    
+    func removeItems(at offsets: IndexSet) {
+        expenses.items.remove(atOffsets: offsets)
     }
 }
 
