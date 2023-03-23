@@ -7,22 +7,44 @@
 
 import Foundation
 class Expenses: ObservableObject {
-    @Published var items = [ExpenseItem]() {
+    private let personalKey = "Personal"
+    private let businessKey = "Business"
+    
+    @Published var personal = [ExpenseItem]() {
         didSet {
-            if let encoded = try? JSONEncoder().encode(items) {
-                UserDefaults.standard.set(encoded, forKey: "Items")
+            if let encoded = try? JSONEncoder().encode(personal) {
+                UserDefaults.standard.set(encoded, forKey: personalKey)
+            }
+        }
+    }
+    
+    @Published var business = [ExpenseItem]() {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(business) {
+                UserDefaults.standard.set(encoded, forKey: businessKey)
             }
         }
     }
     
     init() {
-        if let savedItems = UserDefaults.standard.data(forKey: "Items") {
+        if let savedItems = UserDefaults.standard.data(forKey: personalKey) {
             if let decodedItems = try? JSONDecoder().decode([ExpenseItem].self, from: savedItems) {
-                items = decodedItems
-                return
+                personal = decodedItems
+            } else {
+                personal = []
             }
+        } else {
+            personal = []
         }
-
-        items = []
+        
+        if let savedItems = UserDefaults.standard.data(forKey: businessKey) {
+            if let decodedItems = try? JSONDecoder().decode([ExpenseItem].self, from: savedItems) {
+                business = decodedItems
+            } else {
+                business = []
+            }
+        } else {
+            business = []
+        }
     }
 }
