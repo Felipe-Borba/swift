@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     let missions: [Mission] = Bundle.main.decode("missions.json")
-    
+    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
@@ -20,7 +21,7 @@ struct ContentView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(missions) { mission in
                         NavigationLink {
-                            Text("Detail view")
+                            MissionView(mission: mission, astronauts: astronauts)
                         } label: {
                             VStack {
                                 Image(mission.image)
