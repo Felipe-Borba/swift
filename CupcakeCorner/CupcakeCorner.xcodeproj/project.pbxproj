@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5528A0F429E22F6D004495CF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5528A0F329E22F6D004495CF /* StringExtension.swift */; };
 		552C56C329DC30BC002CEA33 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C56C229DC30BC002CEA33 /* CupcakeCornerApp.swift */; };
 		552C56C529DC30BC002CEA33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C56C429DC30BC002CEA33 /* ContentView.swift */; };
 		552C56C729DC30BD002CEA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552C56C629DC30BD002CEA33 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5528A0F329E22F6D004495CF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		552C56BF29DC30BC002CEA33 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		552C56C229DC30BC002CEA33 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		552C56C429DC30BC002CEA33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				554FA97D29DD7B6600DDE4F4 /* AddressView.swift */,
 				554FA97F29DD7D6B00DDE4F4 /* CheckoutView.swift */,
 				554FA97B29DD752400DDE4F4 /* Order.swift */,
+				5528A0F329E22F6D004495CF /* StringExtension.swift */,
 				552C56C629DC30BD002CEA33 /* Assets.xcassets */,
 				552C56C829DC30BD002CEA33 /* Preview Content */,
 			);
@@ -168,6 +171,7 @@
 			files = (
 				552C56D529DC4547002CEA33 /* LoadingImageView.swift in Sources */,
 				552C56C529DC30BC002CEA33 /* ContentView.swift in Sources */,
+				5528A0F429E22F6D004495CF /* StringExtension.swift in Sources */,
 				552C56C329DC30BC002CEA33 /* CupcakeCornerApp.swift in Sources */,
 				552C56D729DC45BC002CEA33 /* ValidatingDisablingFormsView.swift in Sources */,
 				552C56D129DC44A6002CEA33 /* CodablePublishedView.swift in Sources */,
