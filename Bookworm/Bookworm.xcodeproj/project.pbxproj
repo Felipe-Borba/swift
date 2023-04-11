@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5503E42729E56D52004183DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503E42629E56D52004183DD /* DetailView.swift */; };
 		550775B629E40D7700533DF6 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550775B529E40D7700533DF6 /* AddBookView.swift */; };
 		550775B829E412C500533DF6 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550775B729E412C500533DF6 /* RatingView.swift */; };
 		550775BA29E4154400533DF6 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550775B929E4154400533DF6 /* EmojiRatingView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5503E42629E56D52004183DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		550775B529E40D7700533DF6 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		550775B729E412C500533DF6 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		550775B929E4154400533DF6 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				550775B529E40D7700533DF6 /* AddBookView.swift */,
 				550775B729E412C500533DF6 /* RatingView.swift */,
 				550775B929E4154400533DF6 /* EmojiRatingView.swift */,
+				5503E42629E56D52004183DD /* DetailView.swift */,
 				559D93ED29E3335A0053C8E2 /* Bookworm.xcdatamodeld */,
 				559D93DC29E329080053C8E2 /* Assets.xcassets */,
 				559D93DE29E329080053C8E2 /* Preview Content */,
@@ -174,6 +177,7 @@
 				559D93E829E32B850053C8E2 /* BidingView.swift in Sources */,
 				559D93EF29E3335A0053C8E2 /* Bookworm.xcdatamodeld in Sources */,
 				550775B829E412C500533DF6 /* RatingView.swift in Sources */,
+				5503E42729E56D52004183DD /* DetailView.swift in Sources */,
 				550775B629E40D7700533DF6 /* AddBookView.swift in Sources */,
 				559D93DB29E329070053C8E2 /* ContentView.swift in Sources */,
 				559D93EA29E32CC50053C8E2 /* TextEditorView.swift in Sources */,
