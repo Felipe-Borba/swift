@@ -31,9 +31,16 @@ struct DetailView: View {
                     .clipShape(Capsule())
                     .offset(x: -5, y: -5)
             }
+            
             Text(book.author ?? "Unknown author")
                 .font(.title)
                 .foregroundColor(.secondary)
+            
+            if let date = book.date {
+                Text(date.formatted(date: .abbreviated, time: .omitted))
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+            }
 
             Text(book.review ?? "No review")
                 .padding()
