@@ -11,10 +11,12 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @State private var lastNameFilter = "A"
+    @State private var filterType = FilterType.contains
+    @State private var sortDescriptors = [SortDescriptor<Singer>]()
     
     var body: some View {
         VStack {
-            FilteredList(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
+            FilteredList(type: filterType, filterKey: "lastName", filterValue: lastNameFilter, sortDescriptors: sortDescriptors) { (singer: Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
             }
 
@@ -40,6 +42,22 @@ struct ContentView: View {
 
             Button("Show S") {
                 lastNameFilter = "S"
+            }
+            
+            Button("Begins with") {
+                filterType = .beginsWith
+            }
+            
+            Button("Contains") {
+                filterType = .contains
+            }
+            
+            Button("A-Z") {
+                sortDescriptors = [SortDescriptor(\.firstName)]
+            }
+            
+            Button("Z-A") {
+                sortDescriptors = [SortDescriptor(\.firstName, order: .reverse)]
             }
         }
     }
