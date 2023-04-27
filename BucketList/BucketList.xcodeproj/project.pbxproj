@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556772A329FA80DD00733B5E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556772A229FA80DD00733B5E /* Result.swift */; };
 		558F830A29F9265000E1A5D7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F830929F9265000E1A5D7 /* Location.swift */; };
 		558F830C29F92E1D00E1A5D7 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F830B29F92E1D00E1A5D7 /* EditView.swift */; };
 		55D10C0F29F6C3130024254A /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D10C0E29F6C3130024254A /* BucketListApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556772A229FA80DD00733B5E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		558F830929F9265000E1A5D7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		558F830B29F92E1D00E1A5D7 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		55D10C0B29F6C3120024254A /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,7 @@
 				55D10C1029F6C3130024254A /* ContentView.swift */,
 				558F830B29F92E1D00E1A5D7 /* EditView.swift */,
 				558F830929F9265000E1A5D7 /* Location.swift */,
+				556772A229FA80DD00733B5E /* Result.swift */,
 				55D10C1229F6C3130024254A /* Assets.xcassets */,
 				55D10C1429F6C3130024254A /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D10C1129F6C3130024254A /* ContentView.swift in Sources */,
+				556772A329FA80DD00733B5E /* Result.swift in Sources */,
 				55D10C0F29F6C3130024254A /* BucketListApp.swift in Sources */,
 				558F830C29F92E1D00E1A5D7 /* EditView.swift in Sources */,
 				558F830A29F9265000E1A5D7 /* Location.swift in Sources */,
