@@ -32,6 +32,8 @@ struct ContentView: View {
                             Spacer()
                             Text("Score: \(totalScore.formatted())")
                         }
+                        .accessibilityLabel(word)
+                        .accessibilityHint("\(word.count) letters")
                     }
                 }
             }
