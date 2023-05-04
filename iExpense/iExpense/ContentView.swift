@@ -28,6 +28,9 @@ struct ContentView: View {
                                 .foregroundColor(item.amount < 10 ? Color.blue : Color.red)
                                 .fontWeight(item.amount < 100 ? .regular : .bold)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(item.name), \(item.amount.formatted(.currency(code: "USD")))")
+                        .accessibilityHint(item.type)
                     }
                     .onDelete(perform: removePersonalItems)
                 }
@@ -45,6 +48,9 @@ struct ContentView: View {
                                 .foregroundColor(item.amount < 10 ? Color.blue : Color.red)
                                 .fontWeight(item.amount < 100 ? .regular : .bold)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(item.name), \(item.amount.formatted(.currency(code: "USD")))")
+                        .accessibilityHint(item.type)
                     }
                     .onDelete(perform: removeBusinessItems)
                 }
