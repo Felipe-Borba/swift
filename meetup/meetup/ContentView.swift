@@ -15,10 +15,11 @@ struct ContentView: View {
             List {
                 ForEach(viewmodel.somePeople) { someone in
                     NavigationLink {
-                        Text(someone.name)
+                        DetailSomeoneView(someone: someone)
                     } label: {
                         HStack {
-                            Image(uiImage: UIImage(data: someone.picture)!)
+                            //Image(uiImage: UIImage(data: someone.picture)!)
+                            someone.image?
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .scaledToFit()

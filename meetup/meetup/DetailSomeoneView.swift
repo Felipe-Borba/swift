@@ -11,12 +11,19 @@ struct DetailSomeoneView: View {
     let someone: Someone
     
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                someone.image?
+                    .resizable()
+                    .scaledToFit()
+            }
+            .navigationTitle(someone.name)
+        }
     }
 }
 
 struct DetailSomeoneView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailSomeoneView()
+        DetailSomeoneView(someone: Someone.example())
     }
 }
