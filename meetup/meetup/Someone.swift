@@ -11,5 +11,9 @@ import Foundation
 struct Someone: Identifiable, Codable {
     var id: UUID
     var name: String
-    //var picture: UIImage
+    var picture: Data
+    
+    static func example() -> Someone {
+        Someone(id: UUID(), name: "Isis", picture: )
+    }
 }
