@@ -49,6 +49,9 @@ struct AddSomeoneView: View {
             .sheet(isPresented: $viewModel.showingImagePicker) {
                 ImagePicker(image: $viewModel.inputImage)
             }
+            .task {
+                viewModel.startLocation()
+            }
         }
     }
 }

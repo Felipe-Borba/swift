@@ -18,6 +18,7 @@
 		55683B132A055F6700F4BA83 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55683B122A055F6700F4BA83 /* ImagePicker.swift */; };
 		5586B1852A0715B1004BE0E0 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586B1842A0715B1004BE0E0 /* ContentView-ViewModel.swift */; };
 		5586B1872A0740EC004BE0E0 /* DetailSomeoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586B1862A0740EC004BE0E0 /* DetailSomeoneView.swift */; };
+		55FBAB532A09094200AFCF86 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBAB522A09094200AFCF86 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		55683B122A055F6700F4BA83 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		5586B1842A0715B1004BE0E0 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		5586B1862A0740EC004BE0E0 /* DetailSomeoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSomeoneView.swift; sourceTree = "<group>"; };
+		55FBAB522A09094200AFCF86 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		55FBAB542A090A3B00AFCF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		5548F8DA2A050B39000CB058 /* Meetup */ = {
 			isa = PBXGroup;
 			children = (
+				55FBAB542A090A3B00AFCF86 /* Info.plist */,
 				5548F8DB2A050B39000CB058 /* MeetupApp.swift */,
 				5548F8DD2A050B39000CB058 /* ContentView.swift */,
 				5586B1842A0715B1004BE0E0 /* ContentView-ViewModel.swift */,
@@ -74,6 +78,7 @@
 				5548F8EA2A050CED000CB058 /* Someone.swift */,
 				55683B122A055F6700F4BA83 /* ImagePicker.swift */,
 				5548F8EC2A0512C7000CB058 /* FileManager-DocumentsDirectory.swift */,
+				55FBAB522A09094200AFCF86 /* LocationFetcher.swift */,
 				5548F8DF2A050B3A000CB058 /* Assets.xcassets */,
 				5548F8E12A050B3A000CB058 /* Preview Content */,
 			);
@@ -160,6 +165,7 @@
 			files = (
 				5548F8F42A0528A6000CB058 /* AddSomeoneView-ViewModel.swift in Sources */,
 				5548F8EB2A050CED000CB058 /* Someone.swift in Sources */,
+				55FBAB532A09094200AFCF86 /* LocationFetcher.swift in Sources */,
 				5548F8DE2A050B39000CB058 /* ContentView.swift in Sources */,
 				55683B132A055F6700F4BA83 /* ImagePicker.swift in Sources */,
 				5548F8ED2A0512C7000CB058 /* FileManager-DocumentsDirectory.swift in Sources */,
@@ -298,6 +304,8 @@
 				DEVELOPMENT_TEAM = Q5QJ9NN859;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meetup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to save the location where you meet someone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +335,8 @@
 				DEVELOPMENT_TEAM = Q5QJ9NN859;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meetup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to save the location where you meet someone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
