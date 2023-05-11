@@ -12,6 +12,10 @@
 		552A86052A0A48E0006311A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552A86042A0A48E0006311A8 /* Assets.xcassets */; };
 		552A86082A0A48E0006311A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552A86072A0A48E0006311A8 /* Preview Assets.xcassets */; };
 		5560668E2A0BA3D900468DDB /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560668D2A0BA3D900468DDB /* OptionalView.swift */; };
+		55D401E12A0CEE8000E25F63 /* ManualUiUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */; };
+		55D401E42A0CEF2C00E25F63 /* CreatingContextMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */; };
+		55D401E62A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E52A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift */; };
+		55D401E82A0CF3C600E25F63 /* SchedulingLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E72A0CF3C600E25F63 /* SchedulingLocalNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		552A86042A0A48E0006311A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552A86072A0A48E0006311A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5560668D2A0BA3D900468DDB /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
+		55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualUiUpdateView.swift; sourceTree = "<group>"; };
+		55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenus.swift; sourceTree = "<group>"; };
+		55D401E52A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingCustmRowSwipeActionsToAList.swift; sourceTree = "<group>"; };
+		55D401E72A0CF3C600E25F63 /* SchedulingLocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingLocalNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +61,9 @@
 		552A85FF2A0A48DF006311A8 /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
+				55D401E22A0CEEDD00E25F63 /* lesson */,
 				552A86002A0A48DF006311A8 /* HotProspectsApp.swift */,
 				552A86022A0A48DF006311A8 /* ContentView.swift */,
-				5560668D2A0BA3D900468DDB /* OptionalView.swift */,
 				552A86042A0A48E0006311A8 /* Assets.xcassets */,
 				552A86062A0A48E0006311A8 /* Preview Content */,
 			);
@@ -68,6 +76,18 @@
 				552A86072A0A48E0006311A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55D401E22A0CEEDD00E25F63 /* lesson */ = {
+			isa = PBXGroup;
+			children = (
+				5560668D2A0BA3D900468DDB /* OptionalView.swift */,
+				55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */,
+				55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */,
+				55D401E52A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift */,
+				55D401E72A0CF3C600E25F63 /* SchedulingLocalNotifications.swift */,
+			);
+			path = lesson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D401E82A0CF3C600E25F63 /* SchedulingLocalNotifications.swift in Sources */,
+				55D401E62A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift in Sources */,
 				5560668E2A0BA3D900468DDB /* OptionalView.swift in Sources */,
+				55D401E42A0CEF2C00E25F63 /* CreatingContextMenus.swift in Sources */,
+				55D401E12A0CEE8000E25F63 /* ManualUiUpdateView.swift in Sources */,
 				552A86032A0A48DF006311A8 /* ContentView.swift in Sources */,
 				552A86012A0A48DF006311A8 /* HotProspectsApp.swift in Sources */,
 			);
