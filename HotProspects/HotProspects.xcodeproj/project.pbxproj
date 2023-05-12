@@ -11,6 +11,9 @@
 		552A86032A0A48DF006311A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A86022A0A48DF006311A8 /* ContentView.swift */; };
 		552A86052A0A48E0006311A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552A86042A0A48E0006311A8 /* Assets.xcassets */; };
 		552A86082A0A48E0006311A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552A86072A0A48E0006311A8 /* Preview Assets.xcassets */; };
+		552DC2092A0E40B000BFA65A /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DC2082A0E40B000BFA65A /* ProspectsView.swift */; };
+		552DC20B2A0E40B900BFA65A /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DC20A2A0E40B900BFA65A /* MeView.swift */; };
+		552DC20D2A0E43CF00BFA65A /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DC20C2A0E43CF00BFA65A /* Prospect.swift */; };
 		5560668E2A0BA3D900468DDB /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560668D2A0BA3D900468DDB /* OptionalView.swift */; };
 		55D401E12A0CEE8000E25F63 /* ManualUiUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */; };
 		55D401E42A0CEF2C00E25F63 /* CreatingContextMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */; };
@@ -24,6 +27,9 @@
 		552A86022A0A48DF006311A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		552A86042A0A48E0006311A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552A86072A0A48E0006311A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		552DC2082A0E40B000BFA65A /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		552DC20A2A0E40B900BFA65A /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		552DC20C2A0E43CF00BFA65A /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		5560668D2A0BA3D900468DDB /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
 		55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualUiUpdateView.swift; sourceTree = "<group>"; };
 		55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenus.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 				55D401E22A0CEEDD00E25F63 /* lesson */,
 				552A86002A0A48DF006311A8 /* HotProspectsApp.swift */,
 				552A86022A0A48DF006311A8 /* ContentView.swift */,
+				552DC2082A0E40B000BFA65A /* ProspectsView.swift */,
+				552DC20A2A0E40B900BFA65A /* MeView.swift */,
+				552DC20C2A0E43CF00BFA65A /* Prospect.swift */,
 				552A86042A0A48E0006311A8 /* Assets.xcassets */,
 				552A86062A0A48E0006311A8 /* Preview Content */,
 			);
@@ -161,10 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D401E82A0CF3C600E25F63 /* SchedulingLocalNotifications.swift in Sources */,
+				552DC20D2A0E43CF00BFA65A /* Prospect.swift in Sources */,
 				55D401E62A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift in Sources */,
 				5560668E2A0BA3D900468DDB /* OptionalView.swift in Sources */,
 				55D401E42A0CEF2C00E25F63 /* CreatingContextMenus.swift in Sources */,
+				552DC2092A0E40B000BFA65A /* ProspectsView.swift in Sources */,
 				55D401E12A0CEE8000E25F63 /* ManualUiUpdateView.swift in Sources */,
+				552DC20B2A0E40B900BFA65A /* MeView.swift in Sources */,
 				552A86032A0A48DF006311A8 /* ContentView.swift in Sources */,
 				552A86012A0A48DF006311A8 /* HotProspectsApp.swift in Sources */,
 			);
