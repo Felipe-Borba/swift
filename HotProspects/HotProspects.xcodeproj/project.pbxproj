@@ -16,6 +16,7 @@
 		552DC20B2A0E40B900BFA65A /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DC20A2A0E40B900BFA65A /* MeView.swift */; };
 		552DC20D2A0E43CF00BFA65A /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DC20C2A0E43CF00BFA65A /* Prospect.swift */; };
 		5560668E2A0BA3D900468DDB /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560668D2A0BA3D900468DDB /* OptionalView.swift */; };
+		55BCAC232A123BBE00D8FBD3 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCAC222A123BBE00D8FBD3 /* FileManager-DocumentsDirectory.swift */; };
 		55D401E12A0CEE8000E25F63 /* ManualUiUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */; };
 		55D401E42A0CEF2C00E25F63 /* CreatingContextMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */; };
 		55D401E62A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D401E52A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift */; };
@@ -33,6 +34,7 @@
 		552DC20A2A0E40B900BFA65A /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		552DC20C2A0E43CF00BFA65A /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		5560668D2A0BA3D900468DDB /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
+		55BCAC222A123BBE00D8FBD3 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		55D401E02A0CEE8000E25F63 /* ManualUiUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualUiUpdateView.swift; sourceTree = "<group>"; };
 		55D401E32A0CEF2C00E25F63 /* CreatingContextMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenus.swift; sourceTree = "<group>"; };
 		55D401E52A0CF04F00E25F63 /* AddingCustmRowSwipeActionsToAList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingCustmRowSwipeActionsToAList.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				552DC20A2A0E40B900BFA65A /* MeView.swift */,
 				552DC20C2A0E43CF00BFA65A /* Prospect.swift */,
 				55D625DD2A112F0700D0A322 /* ImageSaver.swift */,
+				55BCAC222A123BBE00D8FBD3 /* FileManager-DocumentsDirectory.swift */,
 				552A86042A0A48E0006311A8 /* Assets.xcassets */,
 				552A86062A0A48E0006311A8 /* Preview Content */,
 			);
@@ -186,6 +189,7 @@
 				5560668E2A0BA3D900468DDB /* OptionalView.swift in Sources */,
 				55D401E42A0CEF2C00E25F63 /* CreatingContextMenus.swift in Sources */,
 				552DC2092A0E40B000BFA65A /* ProspectsView.swift in Sources */,
+				55BCAC232A123BBE00D8FBD3 /* FileManager-DocumentsDirectory.swift in Sources */,
 				55D401E12A0CEE8000E25F63 /* ManualUiUpdateView.swift in Sources */,
 				55D625DE2A112F0700D0A322 /* ImageSaver.swift in Sources */,
 				552DC20B2A0E40B900BFA65A /* MeView.swift in Sources */,
