@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552DA0AB2A16288000BAD637 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0AA2A16288000BAD637 /* Card.swift */; };
+		552DA0AD2A1629CE00BAD637 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0AC2A1629CE00BAD637 /* CardView.swift */; };
 		5536C23D2A14D72D00948701 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C23C2A14D72D00948701 /* TimerView.swift */; };
 		5536C23F2A14DA0A00948701 /* BackgroundTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C23E2A14DA0A00948701 /* BackgroundTaskView.swift */; };
 		5536C2412A14DE4B00948701 /* specificAccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C2402A14DE4B00948701 /* specificAccessibilityView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552DA0AA2A16288000BAD637 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		552DA0AC2A1629CE00BAD637 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5536C23C2A14D72D00948701 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		5536C23E2A14DA0A00948701 /* BackgroundTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskView.swift; sourceTree = "<group>"; };
 		5536C2402A14DE4B00948701 /* specificAccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = specificAccessibilityView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				55F759402A1385C200CB8623 /* lesson */,
 				55F759322A13857A00CB8623 /* FlashzillaApp.swift */,
 				55F759342A13857A00CB8623 /* ContentView.swift */,
+				552DA0AA2A16288000BAD637 /* Card.swift */,
+				552DA0AC2A1629CE00BAD637 /* CardView.swift */,
 				55F759362A13857B00CB8623 /* Assets.xcassets */,
 				55F759382A13857B00CB8623 /* Preview Content */,
 			);
@@ -164,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5536C23D2A14D72D00948701 /* TimerView.swift in Sources */,
+				552DA0AB2A16288000BAD637 /* Card.swift in Sources */,
 				5536C23F2A14DA0A00948701 /* BackgroundTaskView.swift in Sources */,
 				55F759462A138FF800CB8623 /* InteractivityView.swift in Sources */,
+				552DA0AD2A1629CE00BAD637 /* CardView.swift in Sources */,
 				5536C2412A14DE4B00948701 /* specificAccessibilityView.swift in Sources */,
 				55F759422A1385F800CB8623 /* GesturesView.swift in Sources */,
 				55F759352A13857A00CB8623 /* ContentView.swift in Sources */,
@@ -306,7 +314,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +343,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
