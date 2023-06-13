@@ -17,18 +17,18 @@ It's a free collection of videos, tutorials, tests, and more, all drawn from aro
 
 ### WeSplit
 
-![wesplit screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/wesplit/01.jpg)
+![wesplit screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/wesplit/01.png)
 
 ### GuessTheFlag
 
-![GuessTheFlag screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/01.jpg)
-![GuessTheFlag screenshot 02](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/02.jpg)
-![GuessTheFlag screenshot 03](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/03.jpg)
-![GuessTheFlag screenshot 04](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/04.jpg)
+![GuessTheFlag screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/01.png)
+![GuessTheFlag screenshot 02](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/02.png)
+![GuessTheFlag screenshot 03](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/03.png)
+![GuessTheFlag screenshot 04](https://github.com/Felipe-Borba/swift/blob/main/images/GuessTheFlag/04.png)
 
 ### BetterRest
 
-![BetterRest screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/BetterRest/01.jpg)
+![BetterRest screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/BetterRest/01.png)
 
 ### WordScramble
 
