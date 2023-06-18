@@ -44,13 +44,6 @@ struct ContentView: View {
                     showingImagePicker = true
                 }
                 
-                HStack {
-                    Text("Intensity")
-                    Slider(value: $filterIntensity)
-                        .onChange(of: filterIntensity) { _ in applyProcessing() }
-                }
-                .padding(.vertical)
-                
                 if currentFilter.inputKeys.contains(kCIInputIntensityKey) {
                     HStack {
                         Text("Intensity")
