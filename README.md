@@ -32,7 +32,12 @@ It's a free collection of videos, tutorials, tests, and more, all drawn from aro
 
 ### WordScramble
 
+![WordScramble screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/WordScramble/01.png)
+
 ### iExpense
+
+![iExpense screenshot 01](https://github.com/Felipe-Borba/swift/blob/main/images/iExpense/01.png)
+![iExpense screenshot 02](https://github.com/Felipe-Borba/swift/blob/main/images/iExpense/02.png)
 
 ### Moonshot
 
